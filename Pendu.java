@@ -24,7 +24,7 @@ public class Pendu {
       System.out.println ("Vous avez perdu");
     }
     score.afficher();
-    String choix;
+    String choix = "";
     while (choix.equals("0")){
       jouerPartie();
       System.out.println("Voulez vous rejouer ?");
