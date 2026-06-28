@@ -1,7 +1,13 @@
 import java.util.Scanner;
 public class Pendu {
   public static void main(String[] args) {
-    jouerPartie();
+    SString choix = "";
+    do {    jouerPartie();  
+            System.out.println("Voulez-vous rejouer ? (O/N)");
+            choix = sc.nextLine().toUpperCase();
+        } while (choix.equals("O"));
+        System.out.println("Merci d'avoir joué !");
+        sc.close();
   }
   public static void jouerPartie() {
     affichageasciiPendu dessin = new affichageasciiPendu();
@@ -23,12 +29,6 @@ public class Pendu {
       System.out.println ("");
     }
     score.afficher();
-    String choix = "";
-    do{
-      jouerPartie();
-      System.out.println("Voulez vous rejouer ?");
-      choix = sc.nextLine().toUpperCase();
-    }while (choix.equals("0"));
     System.out.println("Merci d'avoir joué !");
   }
 }
