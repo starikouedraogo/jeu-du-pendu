@@ -6,7 +6,7 @@ public class Pendu {
   public static void jouerPartie() {
     affichageasciiPendu dessin = new affichageasciiPendu();
     dessin.afficher();
-    Scanner sc = ne Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
     BanqueMots banque = new BanqueMots();
     String mot = banque.tirerMotAuHasard();
     System.out.print("Entrer votre réponse : ");
@@ -24,6 +24,9 @@ public class Pendu {
     }
     score.afficher();
     so.close();
+    System.out.println("Voulez vous rejouer ?");
+
     System.out.println("Merci d'avoir joué !");
   }
+
 }
