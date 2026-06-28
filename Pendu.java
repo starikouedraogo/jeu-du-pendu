@@ -1,13 +1,12 @@
 import java.util.Scanner;
 public class Pendu {
   public static void main(String[] args) {
-    SString choix = "";
+    String choix = "";
     do {    jouerPartie();  
             System.out.println("Voulez-vous rejouer ? (O/N)");
             choix = sc.nextLine().toUpperCase();
         } while (choix.equals("O"));
         System.out.println("Merci d'avoir joué !");
-        sc.close();
   }
   public static void jouerPartie() {
     affichageasciiPendu dessin = new affichageasciiPendu();
