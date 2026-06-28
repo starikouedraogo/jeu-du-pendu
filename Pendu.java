@@ -13,6 +13,14 @@ public class Pendu {
       System.out.println("Félicitations");
     else 
     System.out.println("Vous avez perdu");
+    Score score = new Score();
+    if (reponse.aquals(mot)){
+      score.gagner();
+      System.out.println ("Félicitations");
+    }else{
+      System.out.println ("Vous avez perdu");
+    }
+    score.afficher();
     so.close();
   }
 }
