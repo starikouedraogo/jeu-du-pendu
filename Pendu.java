@@ -4,7 +4,7 @@ public class Pendu {
     jouerPartie();
   }
   public static void jouerPartie() {
-    Scanner sc = ne Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
     BanqueMots banque = new BanqueMots();
     String mot = banque.tirerMotAuHasard();
     System.out.print("Entrer votre réponse : ");
