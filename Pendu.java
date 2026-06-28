@@ -16,7 +16,7 @@ public class Pendu {
       System.out.println("Félicitations");
     else 
     System.out.println("Vous avez perdu");
-    Score score = new Score();
+    score score = new score();
     if (reponse.equals(mot)){
       score.gagner();
       System.out.println ("Félicitations");
