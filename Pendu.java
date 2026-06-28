@@ -9,7 +9,6 @@ public class Pendu {
     Scanner sc = new Scanner(System.in);
     BanqueMots banque = new BanqueMots();
     String mot = banque.tirerMotAuHasard();
-    mot = "AUBEN";
     System.out.print("Entrer votre réponse : ");
     String reponse = sc.nextLine().toUpperCase();
     if(reponse.equals(mot))
