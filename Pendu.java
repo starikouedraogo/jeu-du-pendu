@@ -4,6 +4,8 @@ public class Pendu {
     jouerPartie();
   }
   public static void jouerPartie() {
+    affichageasciiPendu dessin = new affichageasciiPendu();
+    dessin.afficher();
     Scanner sc = ne Scanner(System.in);
     String mot = "AUBEN";
     System.out.print("Entrer votre réponse : ");
