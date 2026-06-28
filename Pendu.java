@@ -4,7 +4,7 @@ public class Pendu {
     jouerPartie();
   }
   public static void jouerPartie() {
-    Scanner sc = ne Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
     String mot = "AUBEN";
     System.out.print("Entrer votre réponse : ");
     String reponse = sc.nextLine().toUpperCase();
