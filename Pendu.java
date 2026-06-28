@@ -26,7 +26,7 @@ public class Pendu {
     }
     score.afficher();
     so.close();
-    System sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
     String choix;
     while (choix.equals("0")){
       jouerPartie();
