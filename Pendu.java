@@ -5,7 +5,8 @@ public class Pendu {
   }
   public static void jouerPartie() {
     Scanner sc = ne Scanner(System.in);
-    String mot = "AUBEN";
+    BanqueMots banque = new BanqueMots();
+    String mot = banque.tirerMotAuHasard();
     System.out.print("Entrer votre réponse : ");
     String reponse = sc.nextLine().toUpperCase();
     if(reponse.equals(mot))
