@@ -13,5 +13,6 @@ public class Pendu {
     else 
     System.out.println("Vous avez perdu");
     so.close();
+    System.out.println("Merci d'avoir joué !");
   }
 }
