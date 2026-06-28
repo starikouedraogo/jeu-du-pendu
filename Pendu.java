@@ -24,5 +24,6 @@ public class Pendu {
     }
     score.afficher();
     so.close();
+    System.out.println("Merci d'avoir joué !");
   }
 }
