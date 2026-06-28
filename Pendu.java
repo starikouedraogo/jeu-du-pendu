@@ -9,8 +9,7 @@ public class Pendu {
     Scanner sc = new Scanner(System.in);
     BanqueMots banque = new BanqueMots();
     String mot = banque.tirerMotAuHasard();
-    Scanner sc = new Scanner(System.in);
-    String mot = "AUBEN";
+    mot = "AUBEN";
     System.out.print("Entrer votre réponse : ");
     String reponse = sc.nextLine().toUpperCase();
     if(reponse.equals(mot))
@@ -18,15 +17,13 @@ public class Pendu {
     else 
     System.out.println("Vous avez perdu");
     Score score = new Score();
-    if (reponse.aquals(mot)){
+    if (reponse.equals(mot)){
       score.gagner();
       System.out.println ("Félicitations");
     }else{
       System.out.println ("Vous avez perdu");
     }
     score.afficher();
-    so.close();
-    Scanner sc = new Scanner(System.in);
     String choix;
     while (choix.equals("0")){
       jouerPartie();
@@ -35,5 +32,5 @@ public class Pendu {
     } 
     System.out.println("Merci d'avoir joué !");
   }
-
+sc.close();
 }

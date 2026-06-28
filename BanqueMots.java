@@ -7,7 +7,7 @@ public class BanqueMots {
         "HOPITAL",
         "VILLA"
     };
-    public String tirerMot() {
+    public String tirerMotAuHasard() {
         Random r = new Random();
         return mots[r.nextInt(mots.length)];
     }
