@@ -4,6 +4,8 @@ public class Pendu {
     jouerPartie();
   }
   public static void jouerPartie() {
+    affichageasciiPendu dessin = new affichageasciiPendu();
+    dessin.afficher();
     Scanner sc = ne Scanner(System.in);
     BanqueMots banque = new BanqueMots();
     String mot = banque.tirerMotAuHasard();
