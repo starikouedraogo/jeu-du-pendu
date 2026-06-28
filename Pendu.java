@@ -26,8 +26,13 @@ public class Pendu {
     }
     score.afficher();
     so.close();
-    System.out.println("Voulez vous rejouer ?");
-
+    System sc = new Scanner(System.in);
+    String choix;
+    while (choix.equals("0")){
+      jouerPartie();
+      System.out.println("Voulez vous rejouer ?");
+      choix = sc.nextLine().toUpperCase();
+    } 
     System.out.println("Merci d'avoir joué !");
   }
 
