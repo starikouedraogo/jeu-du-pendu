@@ -9,6 +9,6 @@ public class BanqueMots {
     };
     public String tirerMot() {
         Random r = new Random();
-        return mots[r.nextInt(mots.length)]
+        return mots[r.nextInt(mots.length)];
     }
 }
