@@ -4,6 +4,7 @@ public class Pendu {
     jouerPartie();
   }
   public static void jouerPartie() {
+
     affichageasciiPendu dessin = new affichageasciiPendu();
     dessin.afficher();
     Scanner sc = new Scanner(System.in);
