@@ -32,5 +32,4 @@ public class Pendu {
     } 
     System.out.println("Merci d'avoir joué !");
   }
-sc.close();
 }
