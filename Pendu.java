@@ -4,12 +4,13 @@ public class Pendu {
     jouerPartie();
   }
   public static void jouerPartie() {
-
     affichageasciiPendu dessin = new affichageasciiPendu();
     dessin.afficher();
     Scanner sc = new Scanner(System.in);
     BanqueMots banque = new BanqueMots();
     String mot = banque.tirerMotAuHasard();
+    Scanner sc = new Scanner(System.in);
+    String mot = "AUBEN";
     System.out.print("Entrer votre réponse : ");
     String reponse = sc.nextLine().toUpperCase();
     if(reponse.equals(mot))
