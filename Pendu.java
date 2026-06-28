@@ -25,11 +25,11 @@ public class Pendu {
     }
     score.afficher();
     String choix = "";
-    while (choix.equals("0")){
+    do{
       jouerPartie();
       System.out.println("Voulez vous rejouer ?");
       choix = sc.nextLine().toUpperCase();
-    } 
+    }while (choix.equals("0"));
     System.out.println("Merci d'avoir joué !");
   }
 }
